@@ -60,29 +60,60 @@ const About = () => {
               <h3 className="text-2xl font-semibold mb-4">My Journey</h3>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  I started my career as a front-end developer and quickly expanded into 
-                  full-stack development, driven by a curiosity to understand the entire 
-                  application lifecycle.
+                  I'm an efficiency driven and detail-oriented Full-stack Developer with 5 years of 
+                  experience in designing, developing, and maintaining frontend 
+                  pages and backend systems for web and mobile applications.
                 </p>
                 <p>
-                  My passion for cloud technologies led me to become certified in AWS and GCP, 
-                  designing systems that handle millions of requests daily with 99.99% uptime.
+                  Proficient in Node.js, PHP, Python and .NET C# with strong 
+                  expertise in RESTful API development, database management, 
+                  and cloud services. Adept at collaborating with cross-functional 
+                  teams to deliver robust, scalable, and efficient solutions
                 </p>
                 <p>
-                  Recently, I've been deeply immersed in AI/ML, building recommendation engines, 
-                  NLP applications, and integrating LLMs into production systems.
+                  I have built experience across a diverse sectors, 
+                  from Tele-Operations, working in the Government 
+                  and Agencies sector, and now contributing within the Financial Sector
                 </p>
               </div>
               <div className="mt-6 pt-6 border-t border-border">
-                <div className="flex flex-wrap gap-3">
-                  {["React", "Node.js", "Python", "AWS", "Kubernetes", "TensorFlow"].map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-3 py-1 text-sm bg-primary/10 text-primary rounded-full"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                <div className="overflow-hidden relative">
+                  <style>{`
+                    @keyframes slide-skills {
+                      from {
+                        transform: translateX(0);
+                      }
+                      to {
+                        transform: translateX(-50%);
+                      }
+                    }
+                    .skills-slider {
+                      animation: slide-skills 20s linear infinite;
+                    }
+                    .skills-slider:hover {
+                      animation-play-state: paused;
+                    }
+                  `}</style>
+                  <div className="flex gap-3 skills-slider">
+                    {/* First set of skills */}
+                    {["React", "Node.js", "Python", "AWS", "Kubernetes", "TensorFlow", "TypeScript", "Docker", "MongoDB", "GraphQL", "Next.js", "PostgreSQL"].map((tech, index) => (
+                      <span
+                        key={`tech-1-${index}`}
+                        className="px-3 py-1 text-sm bg-primary/10 text-primary rounded-full whitespace-nowrap flex-shrink-0"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                    {/* Duplicate set for seamless loop */}
+                    {["React", "Node.js", "Python", "AWS", "Kubernetes", "TensorFlow", "TypeScript", "Docker", "MongoDB", "GraphQL", "Next.js", "PostgreSQL"].map((tech, index) => (
+                      <span
+                        key={`tech-2-${index}`}
+                        className="px-3 py-1 text-sm bg-primary/10 text-primary rounded-full whitespace-nowrap flex-shrink-0"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
