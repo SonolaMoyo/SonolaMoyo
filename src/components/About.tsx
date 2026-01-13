@@ -2,22 +2,24 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Code2, Cloud, Brain, Users } from "lucide-react";
+import { FaReact, FaNodeJs, FaPython, FaAws, FaDocker } from "react-icons/fa";
+import { SiKubernetes, SiTensorflow, SiTypescript, SiMongodb, SiGraphql, SiNextdotjs, SiPostgresql } from "react-icons/si";
 
 const highlights = [
   {
     icon: Code2,
     title: "Full Stack Development",
-    description: "Building end-to-end applications with modern frameworks and best practices.",
+    description: "Building end-to-end applications with modern frameworks, clean architecture and best practices.",
   },
   {
     icon: Cloud,
     title: "Cloud Architecture",
-    description: "Designing scalable, resilient infrastructure on AWS, GCP, and Azure.",
+    description: "Designing scalable, resilient infrastructure on AWS and Azure.",
   },
   {
     icon: Brain,
     title: "AI & Machine Learning",
-    description: "Implementing intelligent solutions with TensorFlow, PyTorch, and LLMs.",
+    description: "Implementing intelligent solutions with Azure Foundry and OpenAPI.",
   },
   {
     icon: Users,
@@ -94,24 +96,56 @@ const About = () => {
                       animation-play-state: paused;
                     }
                   `}</style>
-                  <div className="flex gap-3 skills-slider">
+                  <div className="flex gap-4 skills-slider">
                     {/* First set of skills */}
-                    {["React", "Node.js", "Python", "AWS", "Kubernetes", "TensorFlow", "TypeScript", "Docker", "MongoDB", "GraphQL", "Next.js", "PostgreSQL"].map((tech, index) => (
-                      <span
+                    {[
+                      { name: "React", icon: FaReact, color: "text-[#61DAFB]" },
+                      { name: "Node.js", icon: FaNodeJs, color: "text-[#339933]" },
+                      { name: "Python", icon: FaPython, color: "text-[#3776AB]" },
+                      { name: "AWS", icon: FaAws, color: "text-[#FF9900]" },
+                      { name: "Kubernetes", icon: SiKubernetes, color: "text-[#326CE5]" },
+                      { name: "TensorFlow", icon: SiTensorflow, color: "text-[#FF6F00]" },
+                      { name: "TypeScript", icon: SiTypescript, color: "text-[#3178C6]" },
+                      { name: "Docker", icon: FaDocker, color: "text-[#2496ED]" },
+                      { name: "MongoDB", icon: SiMongodb, color: "text-[#47A248]" },
+                      { name: "GraphQL", icon: SiGraphql, color: "text-[#E10098]" },
+                      { name: "Next.js", icon: SiNextdotjs, color: "text-white" },
+                      { name: "PostgreSQL", icon: SiPostgresql, color: "text-[#4169E1]" },
+                    ].map((skill, index) => (
+                      <div
                         key={`tech-1-${index}`}
-                        className="px-3 py-1 text-sm bg-primary/10 text-primary rounded-full whitespace-nowrap flex-shrink-0"
+                        className="px-4 py-2 bg-[#0f172a] border border-primary/20 rounded-full flex items-center gap-2 group hover:border-primary/50 transition-colors duration-300 min-w-fit"
                       >
-                        {tech}
-                      </span>
+                        <skill.icon className={`${skill.color} text-lg`} />
+                        <span className="text-sm font-medium text-gray-200 group-hover:text-white transition-colors">
+                          {skill.name}
+                        </span>
+                      </div>
                     ))}
                     {/* Duplicate set for seamless loop */}
-                    {["React", "Node.js", "Python", "AWS", "Kubernetes", "TensorFlow", "TypeScript", "Docker", "MongoDB", "GraphQL", "Next.js", "PostgreSQL"].map((tech, index) => (
-                      <span
+                    {[
+                      { name: "React", icon: FaReact, color: "text-[#61DAFB]" },
+                      { name: "Node.js", icon: FaNodeJs, color: "text-[#339933]" },
+                      { name: "Python", icon: FaPython, color: "text-[#3776AB]" },
+                      { name: "AWS", icon: FaAws, color: "text-[#FF9900]" },
+                      { name: "Kubernetes", icon: SiKubernetes, color: "text-[#326CE5]" },
+                      { name: "TensorFlow", icon: SiTensorflow, color: "text-[#FF6F00]" },
+                      { name: "TypeScript", icon: SiTypescript, color: "text-[#3178C6]" },
+                      { name: "Docker", icon: FaDocker, color: "text-[#2496ED]" },
+                      { name: "MongoDB", icon: SiMongodb, color: "text-[#47A248]" },
+                      { name: "GraphQL", icon: SiGraphql, color: "text-[#E10098]" },
+                      { name: "Next.js", icon: SiNextdotjs, color: "text-white" },
+                      { name: "PostgreSQL", icon: SiPostgresql, color: "text-[#4169E1]" },
+                    ].map((skill, index) => (
+                      <div
                         key={`tech-2-${index}`}
-                        className="px-3 py-1 text-sm bg-primary/10 text-primary rounded-full whitespace-nowrap flex-shrink-0"
+                        className="px-4 py-2 bg-[#0f172a] border border-primary/20 rounded-full flex items-center gap-2 group hover:border-primary/50 transition-colors duration-300 min-w-fit"
                       >
-                        {tech}
-                      </span>
+                        <skill.icon className={`${skill.color} text-lg`} />
+                        <span className="text-sm font-medium text-gray-200 group-hover:text-white transition-colors">
+                          {skill.name}
+                        </span>
+                      </div>
                     ))}
                   </div>
                 </div>

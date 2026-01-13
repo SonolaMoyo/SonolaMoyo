@@ -25,7 +25,7 @@ const Footer = () => {
           {/* Logo & Tagline */}
           <div>
             <a href="#home" className="text-2xl font-bold text-gradient">
-              {"<Dev />"}
+              {"moscoTechh"}
             </a>
             <p className="text-muted-foreground text-sm mt-2">
               Building the future with code & cloud
@@ -66,9 +66,6 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
             © {currentYear} Developer Portfolio. All rights reserved.
-          </p>
-          <p className="text-sm text-muted-foreground flex items-center gap-1">
-            Made with <Heart size={14} className="text-red-500 fill-red-500" /> using React & Tailwind
           </p>
         </div>
       </div>
