@@ -33,6 +33,7 @@ export interface Article {
 const COLLECTION_NAME = "articles";
 
 export const getArticles = async (publishedOnly = true): Promise<Article[]> => {
+  if (!db) return [];
   const articlesRef = collection(db, COLLECTION_NAME);
   let q = query(articlesRef, orderBy("createdAt", "desc"));
   
@@ -48,6 +49,7 @@ export const getArticles = async (publishedOnly = true): Promise<Article[]> => {
 };
 
 export const getArticleBySlug = async (slug: string): Promise<Article | null> => {
+  if (!db) return null;
   const articlesRef = collection(db, COLLECTION_NAME);
   const q = query(articlesRef, where("slug", "==", slug));
   const snapshot = await getDocs(q);
@@ -59,6 +61,7 @@ export const getArticleBySlug = async (slug: string): Promise<Article | null> =>
 };
 
 export const getArticleById = async (id: string): Promise<Article | null> => {
+  if (!db) return null;
   const docRef = doc(db, COLLECTION_NAME, id);
   const snapshot = await getDoc(docRef);
   
@@ -68,6 +71,7 @@ export const getArticleById = async (id: string): Promise<Article | null> => {
 };
 
 export const createArticle = async (article: Omit<Article, "id" | "createdAt" | "updatedAt">): Promise<string> => {
+  if (!db) throw new Error("Firestore unavailable");
   const now = Timestamp.now();
   const docRef = await addDoc(collection(db, COLLECTION_NAME), {
     ...article,
@@ -78,6 +82,7 @@ export const createArticle = async (article: Omit<Article, "id" | "createdAt" | 
 };
 
 export const updateArticle = async (id: string, article: Partial<Article>): Promise<void> => {
+  if (!db) return;
   const docRef = doc(db, COLLECTION_NAME, id);
   await updateDoc(docRef, {
     ...article,
@@ -86,15 +91,19 @@ export const updateArticle = async (id: string, article: Partial<Article>): Prom
 };
 
 export const deleteArticle = async (id: string): Promise<void> => {
+  if (!db) return;
   const docRef = doc(db, COLLECTION_NAME, id);
   await deleteDoc(docRef);
 };
 
 export const uploadImage = async (file: File, path: string): Promise<string> => {
+  if (!storage) throw new Error("Storage unavailable");
   const storageRef = ref(storage, path);
   await uploadBytes(storageRef, file);
   return getDownloadURL(storageRef);
 };
+
+
 
 export const generateSlug = (title: string): string => {
   return title

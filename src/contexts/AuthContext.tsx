@@ -19,11 +19,26 @@ export const useAuth = () => {
   return context;
 };
 
+import { toast } from "sonner";
+import { initializationError } from "@/lib/firebase";
+
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    if (!auth) {
+      console.warn("Firebase Auth is not initialized.");
+      if (initializationError) {
+         toast.error("Firebase Configuration Error", {
+           description: "Authentication features are disabled. " + initializationError.message,
+           duration: 10000,
+         });
+      }
+      setLoading(false);
+      return;
+    }
+
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setUser(user);
       setLoading(false);
@@ -33,10 +48,17 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, []);
 
   const login = async (email: string, password: string) => {
+    if (!auth) {
+      toast.error("Authentication Unavailable", {
+        description: "Firebase is not properly configured."
+      });
+      return;
+    }
     await signInWithEmailAndPassword(auth, email, password);
   };
 
   const logout = async () => {
+    if (!auth) return;
     await signOut(auth);
   };
 
@@ -46,3 +68,5 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     </AuthContext.Provider>
   );
 };
+
+
