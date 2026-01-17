@@ -1,73 +1,56 @@
-# Welcome to your Lovable project
+# **Hi there!** 👋🏼
+I’m Moyo a software engineer.
 
-## Project info
+[click to view resume](www.linkedin.com/in/sonolamoyo2000)
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+# Done Implementation
 
-## How can I edit this code?
+- ✅ **Distributed Systems:**
+  - Concepts of distributed computing
+  - Handling data consistency and partitioning
+  - Designing fault-tolerant systems
 
-There are several ways of editing your application.
+- ✅ **Microservices Architecture:**
+  - Designing and developing microservices
+  - Inter-service communication patterns (e.g., REST, gRPC)
+  - Service discovery and orchestration
 
-**Use Lovable**
+- ✅ **Database Management and Optimization:**
+  - Advanced SQL techniques
+  - NoSQL databases: use cases and best practices
+  - Database scaling strategies and replication
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- ✅ **Caching Strategies:**
+  - Implementation of caching mechanisms (e.g., Redis, Memcached)
+  - Cache eviction policies
+  - Cache aside, read through, and write through patterns
 
-Changes made via Lovable will be committed automatically to this repo.
+- ✅ **Security Practices:**
+  - Securing REST APIs
+  - OAuth and JWT for secure authentication
+  - Advanced encryption and data security techniques
 
-**Use your preferred IDE**
+- ✅ **Containerization and Orchestration:**
+  - Docker fundamentals and best practices
+  - Kubernetes for managing containerized applications
+  - Continuous integration/continuous deployment (CI/CD) workflows
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- ✅ **Performance Tuning:**
+  - Profiling and optimizing backend applications
+  - Load balancing and traffic management
+  - Efficient memory and resource management
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- ✅ **Message Brokers and Asynchronous Processing:**
+  - Using message brokers like RabbitMQ and Kafka
+  - Event-driven architecture
+  - Handling background tasks with Celery
 
-Follow these steps:
+- ✅ **API Design and Management:**
+  - RESTful and GraphQL API designs
+  - Versioning strategies for APIs
+  - API documentation (e.g., Swagger, OpenAPI)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- ✅ **Scalability and Reliability Engineering:**
+  - Techniques for scaling applications horizontally and vertically
+  - Designing for high availability and disaster recovery
+  - Stress and load testing
