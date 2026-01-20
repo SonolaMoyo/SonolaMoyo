@@ -27,6 +27,7 @@ import {
   SiOpenai,
   SiGooglecloud,
 } from "react-icons/si";
+import { VscAzure } from "react-icons/vsc";
 
 const skillCategories = [
   {
@@ -76,9 +77,9 @@ const skillCategories = [
 ];
 
 const certifications = [
-  { name: "AWS Solutions Architect", issuer: "Amazon Web Services", year: "2024", icon: FaAws },
-  { name: "Google Cloud Professional", issuer: "Google Cloud", year: "2023", icon: SiGooglecloud },
-  { name: "TensorFlow Developer", issuer: "Google", year: "2023", icon: SiTensorflow },
+  { name: "Azure Developer", issuer: "Microsoft", year: "2025", icon: VscAzure },
+  // { name: "Google Cloud Professional", issuer: "Google Cloud", year: "2023", icon: SiGooglecloud },
+  // { name: "TensorFlow Developer", issuer: "Google", year: "2023", icon: SiTensorflow },
 ];
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

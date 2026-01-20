@@ -8,14 +8,14 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 
 const contactInfo = [
-  { icon: Mail, label: "Email", value: "hello@developer.com", href: "mailto:hello@developer.com" },
-  { icon: MapPin, label: "Location", value: "San Francisco, CA", href: null },
+  { icon: Mail, label: "Email", value: "sonolamoyosoluwalorun@gmail.com", href: "mailto:sonolamoyosoluwalorun@gmail.com" },
+  { icon: MapPin, label: "Location", value: "Lagos, Nigeria", href: null },
 ];
 
 const socialLinks = [
-  { icon: Github, label: "GitHub", href: "https://github.com" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
-  { icon: Twitter, label: "Twitter", href: "https://twitter.com" },
+  { icon: Github, label: "GitHub", href: "https://github.com/SonolaMoyo" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/sonolamoyo2000" },
+  { icon: Twitter, label: "Twitter", href: "https://twitter.com/moscoTechh" },
 ];
 
 const Contact = () => {
