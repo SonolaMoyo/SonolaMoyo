@@ -51,15 +51,16 @@ const About = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left Column - Bio */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
+            className="min-w-0"
           >
-            <div className="glass rounded-2xl p-8 glass-hover">
-              <h3 className="text-2xl font-semibold mb-4">My Journey</h3>
+            <div className="glass rounded-2xl p-6 md:p-8 glass-hover">
+              <h3 className="text-xl md:text-2xl font-semibold mb-4">My Journey</h3>
               <div className="space-y-4 text-muted-foreground">
                 <p>
                   I'm an efficiency driven and detail-oriented Full-stack Developer with 5 years of 
@@ -158,7 +159,7 @@ const About = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="grid grid-cols-2 gap-4"
+            className="grid grid-cols-1 sm:grid-cols-2 gap-4"
           >
             {highlights.map((item, index) => (
               <motion.div
@@ -166,7 +167,7 @@ const About = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
-                className="glass rounded-xl p-6 glass-hover group"
+                className="glass rounded-xl p-5 md:p-6 glass-hover group"
               >
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <item.icon className="text-primary" size={24} />
