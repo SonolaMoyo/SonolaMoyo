@@ -1,9 +1,9 @@
 # **Hi there!** 👋🏼
-I’m Moyo a software engineer.
+Call me Moyo I am a Senior Software and DevOps Engineer.
 
-[click to view resume](www.linkedin.com/in/sonolamoyo2000)
+[Check out my Website](www.moscotechh.tech)
 
-# Done Implementation
+<!-- # Done Implementation
 
 - ✅ **Distributed Systems:**
   - Concepts of distributed computing
@@ -54,3 +54,4 @@ I’m Moyo a software engineer.
   - Techniques for scaling applications horizontally and vertically
   - Designing for high availability and disaster recovery
   - Stress and load testing
+ ->
