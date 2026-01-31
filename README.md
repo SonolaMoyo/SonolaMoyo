@@ -1,8 +1,7 @@
 # **Hi there!** 👋🏼
 Call me Moyo I am a Senior Software and DevOps Engineer.
 
-[Check out my Website](www.moscotechh.tech)
-
+<a href="https://www.moscotechh.tech" target="_blank">Check out my Website</a>
 <!-- # Done Implementation
 
 - ✅ **Distributed Systems:**
