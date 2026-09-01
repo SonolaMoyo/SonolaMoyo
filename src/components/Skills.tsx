@@ -12,6 +12,7 @@ import {
   FaInfinity,
   FaEye,
   FaLink,
+  FaRobot,
 } from "react-icons/fa";
 import {
   SiTypescript,
@@ -24,7 +25,6 @@ import {
   SiTerraform,
   SiTensorflow,
   SiPytorch,
-  SiOpenai,
   SiGooglecloud,
 } from "react-icons/si";
 
@@ -68,7 +68,7 @@ const skillCategories = [
     skills: [
       { name: "TensorFlow", level: 80, icon: SiTensorflow, color: "#FF6F00" },
       { name: "PyTorch", level: 75, icon: SiPytorch, color: "#EE4C2C" },
-      { name: "OpenAI APIs", level: 90, icon: SiOpenai, color: "#412991" },
+      { name: "OpenAI APIs", level: 90, icon: FaRobot, color: "#412991" },
       { name: "LangChain", level: 85, icon: FaLink, color: "#1C3C3C" }, // Using generic link if SiLangchain unavailable, safe fallback
       { name: "Computer Vision", level: 70, icon: FaEye, color: "#FF5722" },
     ],
