@@ -9,10 +9,9 @@ const footerLinks = [
 ];
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Mail, href: "mailto:hello@developer.com", label: "Email" },
+  { icon: Github, href: "https://github.com/SonolaMoyo", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/sonolamoyo2000", label: "LinkedIn" },
+  { icon: Mail, href: "mailto:sonolamoyosoluwalorun@gmail.com", label: "Email" },
 ];
 
 const Footer = () => {

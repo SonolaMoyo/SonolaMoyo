@@ -76,9 +76,11 @@ const skillCategories = [
 ];
 
 const certifications = [
-  { name: "AWS Solutions Architect", issuer: "Amazon Web Services", year: "2024", icon: FaAws },
-  { name: "Google Cloud Professional", issuer: "Google Cloud", year: "2023", icon: SiGooglecloud },
-  { name: "TensorFlow Developer", issuer: "Google", year: "2023", icon: SiTensorflow },
+  { name: "DevOps Engineer Expert (AZ-400)", issuer: "Microsoft", year: "2026", icon: Award },
+  { name: "Professional Cloud Architect", issuer: "Google Cloud", year: "2026", icon: SiGooglecloud },
+  { name: "Kubernetes & Cloud Native Associate", issuer: "CNCF", year: "2026", icon: SiKubernetes },
+  { name: "Azure Developer Associate (AZ-204)", issuer: "Microsoft", year: "2026", icon: Award },
+  { name: "Azure Fundamentals (AZ-900)", issuer: "Microsoft", year: "2025", icon: Award },
 ];
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

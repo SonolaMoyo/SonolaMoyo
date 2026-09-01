@@ -117,9 +117,9 @@ const Hero = () => {
               className="flex gap-6 justify-center"
             >
               {[
-                { icon: Github, href: "https://github.com", label: "GitHub" },
-                { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-                { icon: Mail, href: "#contact", label: "Email" },
+                { icon: Github, href: "https://github.com/SonolaMoyo", label: "GitHub" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/sonolamoyo2000", label: "LinkedIn" },
+                { icon: Mail, href: "mailto:sonolamoyosoluwalorun@gmail.com", label: "Email" },
               ].map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}
