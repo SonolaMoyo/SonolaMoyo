@@ -8,8 +8,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 
 const contactInfo = [
-  { icon: Mail, label: "Email", value: "hello@developer.com", href: "mailto:hello@developer.com" },
-  { icon: MapPin, label: "Location", value: "San Francisco, CA", href: null },
+  { icon: Mail, label: "Email", value: "sonolamoyosoluwalorun@.com", href: "mailto:hello@developer.com" },
+  { icon: MapPin, label: "Location", value: "Yaba, Lagos", href: null },
 ];
 
 const socialLinks = [
@@ -132,7 +132,7 @@ const Contact = () => {
                     <Input
                       id="name"
                       name="name"
-                      placeholder="John Doe"
+                      placeholder="Your Name"
                       required
                       className="bg-secondary border-border focus:border-primary"
                     />
@@ -145,7 +145,7 @@ const Contact = () => {
                       id="email"
                       name="email"
                       type="email"
-                      placeholder="john@example.com"
+                      placeholder="Your Email"
                       required
                       className="bg-secondary border-border focus:border-primary"
                     />
